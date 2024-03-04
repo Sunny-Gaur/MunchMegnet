@@ -1,0 +1,219 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-padding-top: 11%;
+}
+
+:root {
+  /* Primary Color */
+  --primary-color: #048E7B;
+
+  --background-color: #023931;
+
+  /* Background */
+  --white-color: #ffffff;
+
+  /* Accent Gray */
+  --heading-text: #000;
+
+  /* Text and Secondary Elements */
+  --text-color: #333;
+
+  /* Divider Lines */
+}
+
+
+button a {
+  color: black;
+  text-decoration: none;
+}
+
+.shrink img {
+  transition: 1s ease;
+}
+
+.shrink:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+.navbar-col {
+  background-color: var(--background-color);
+}
+
+.mytxt {
+  color: var(--white-color);
+}
+
+.custom-btn {
+  background-color: var(--primary-color);
+}
+
+.custom-btn:hover {
+  background-color: var(--white-color);
+  transition: 1s ease;
+}
+
+.content-wrapper {
+  background-color: var(--background-color);
+  color: var(--white-color);
+}
+
+p {
+  padding-bottom: 0;
+}
+
+.slider-con {
+  /* background-color: var(--background-color); */
+  background: url("./Assets/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* height: 70vh; */
+}
+
+.imgs-con {
+  height: 150px;
+  width: 150px;
+  border-radius: 60%;
+  background-size: cover;
+}
+
+.main-names::before {
+  content: "";
+  border: 3px solid var(--primary-color);
+  border-top-right-radius: 10px;
+  margin-right: 10px;
+}
+
+.main-names::after {
+  content: "";
+  border: 3px solid var(--primary-color);
+  border-top-left-radius: 10px;
+  margin-left: 10px;
+}
+
+.card-body p i {
+  color: #023931;
+  font-weight: 900;
+}
+
+.imgs-con {
+  border: 10px solid var(--primary-color);
+}
+
+a:hover {
+  border-bottom: 2px solid var(--white-color);
+}
+
+.bg-1 {
+  background-image: url("./Assets/client1.jpg");
+}
+
+.bg-2 {
+  background-image: url("./Assets/client2.jpg");
+}
+
+.bg-3 {
+  background-image: url("./Assets/client3.jpg");
+}
+
+.bg-4 {
+  background-image: url("./Assets/client4.jpg");
+}
+
+#nvbdr {
+  border-bottom: 2px solid transparent;
+  transition: 1s ease-in-out;
+}
+
+.right {
+  animation: animate 4s ease-in-out infinite;
+  /* transition:2s smooth; */
+}
+
+.custom-bg:hover {
+  background-color: var(--background-color);
+  color: white;
+  transition: 1s ease;
+
+}
+
+.custom-bg:hover .card-body p i {
+  color: white;
+}
+
+
+@keyframes animate {
+  50% {
+    transform: translateY(-40px);
+
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+
+}
+
+.imgs-con {
+  height: 200px;
+  width: 200px;
+}
+
+.circle {
+  border: 2px solid black;
+  border-radius: 60%;
+}
+
+.ftp a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.Socials-con p i:hover {
+  color: var(--primary-color);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sm-show{
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.custom-btn1 {
+  background-color: rgb(224, 36, 36);
+}
+.navbar-brand:hover{
+  border: transparent;
+}
+@media screen and (max-width: 991px) {
+.smrm{
+  display: none;
+}
+.sm-show{
+  display: block;
+}
+.navbar-col{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.card{
+margin-bottom: 30px;
+}
+}
